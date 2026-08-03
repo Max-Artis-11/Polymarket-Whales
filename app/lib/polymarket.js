@@ -25,6 +25,7 @@ function normalizeLeaderboard(data) {
       address: w.proxyWallet ?? w.address ?? w.wallet ?? w.user ?? '',
       name:
         w.name ??
+        w.userName ??
         w.username ??
         w.pseudonym ??
         shortenAddr(w.proxyWallet ?? w.address ?? ''),

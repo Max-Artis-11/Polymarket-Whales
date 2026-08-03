@@ -4,7 +4,7 @@ export async function GET(req) {
 
   try {
     const res = await fetch(
-      `https://data-api.polymarket.com/positions?user=${user}`,
+      `https://data-api.polymarket.com/positions?user=${user}&sizeThreshold=1&limit=100`,
       { headers: { Accept: 'application/json' } }
     );
     const data = await res.json();
